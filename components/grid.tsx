@@ -6,12 +6,12 @@ const MobileAnimation = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Motion variants for the icons
-  const iconVariants = {
+  const iconVariants:any = {
     initial: {
       opacity: 1,
       scale: 1,
     },
-    animate: (custom) => ({
+    animate: (custom:any) => ({
       x: custom.x, // Dynamic x movement
       y: custom.y, // Dynamic y movement
       scale: 0.3, // Shrinking effect
