@@ -2,16 +2,21 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
+interface CustomAnimationProps {
+  x: number;
+  y: number;
+}
+
 const MobileAnimation = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // Motion variants for the icons
-  const iconVariants:any = {
+  const iconVariants = {
     initial: {
       opacity: 1,
       scale: 1,
     },
-    animate: (custom:any) => ({
+    animate: (custom: CustomAnimationProps) => ({
       x: custom.x, // Dynamic x movement
       y: custom.y, // Dynamic y movement
       scale: 0.3, // Shrinking effect
