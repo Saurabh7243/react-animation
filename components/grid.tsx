@@ -44,6 +44,9 @@ const MobileAnimation = () => {
     //     block: "start",
     //   });
     // }, 1600);
+    setTimeout(()=>{
+      window.location.reload()
+    }, 1600);
   };
 
   return (
