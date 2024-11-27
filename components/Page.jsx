@@ -1,8 +1,6 @@
-'use client';
-// File: src/components/MobileAnimation.jsx
+'use client'
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { BackgroundGradientAnimationDemo } from "./bg";
 
 const MobileAnimation = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -34,13 +32,13 @@ const MobileAnimation = () => {
 
   const handleClick = () => {
     setIsAnimating(true);
-    setTimeout(() => {
-      // Smooth scrolling to the second section
-      document.getElementById("s2").scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }, 1600); // Ensure delay matches animation duration
+    // setTimeout(() => {
+    //   // Smooth scrolling to the second section
+    //   document.getElementById("s2").scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "start",
+    //   });
+    // }, 1600);
   };
 
   return (
@@ -112,10 +110,6 @@ const MobileAnimation = () => {
           </motion.div>
           </motion.div>
         </div>
-      </section>
-
-      <section id="s23" className="h-screen flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500">
-        <BackgroundGradientAnimationDemo />
       </section>
     </>
   );

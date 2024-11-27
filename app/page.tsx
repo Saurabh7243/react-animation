@@ -1,9 +1,9 @@
-import MobileAnimation from "@/components/ui/grid";
+import MobileAnimation from "@/components/page";
 
 export default function Home() {
   return (
     <>
-    <MobileAnimation />
+      <MobileAnimation />
     </>
   );
 }
