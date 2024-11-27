@@ -1,4 +1,4 @@
-import MobileAnimation from "@/components/page";
+import MobileAnimation from "@/components/grid";
 
 export default function Home() {
   return (
